@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ATHAZON-SHOP YOUR FAVOURITE</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Link to your CSS stylesheet -->
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f8f8;
+            color: #333;
+        }
+        header {
+            background-color: #ffffff;
+            padding: 20px 0;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        .top-bar {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        h1 {
+            margin: 0;
+            font-size: 24px;
+            color: #333;
+        }
+        .search-form {
+            display: flex;
+        }
+        .search-form input[type="text"] {
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 5px 0 0 5px;
+            width: 200px;
+        }
+        .search-form button {
+            padding: 10px 20px;
+            background-color: #ff6600;
+            border: none;
+            border-radius: 0 5px 5px 0;
+            color: #fff;
+            cursor: pointer;
+        }
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            justify-content: space-between;
+        }
+        nav ul li {
+            margin-right: 20px;
+        }
+        nav ul li:last-child {
+            margin-right: 0;
+        }
+        nav ul li a {
+            text-decoration: none;
+            color: #333;
+            font-weight: bold;
+        }
+        nav ul li a:hover {
+            color: #ff6600;
+        }
+        main {
+            max-width: 1200px;
+            margin: 20px auto;
+            padding: 0 20px;
+        }
+        .featured-products {
+            margin-bottom: 40px;
+        }
+        .featured-products h2 {
+            font-size: 28px;
+            margin-bottom: 20px;
+        }
+        .product-list {
+            display: flex;
+            flex-wrap: wrap;
+        }
+        .product {
+            background-color: #ffffff;
+            border-radius: 5px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            margin-right: 20px;
+            margin-bottom: 20px;
+            width: calc(33.33% - 20px);
+        }
+        .product img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 5px;
+            margin-bottom: 10px;
+        }
+        .product h3 {
+            font-size: 18px;
+            margin-bottom: 10px;
+        }
+        .product p {
+            font-size: 14px;
+            margin-bottom: 15px;
+            color: #666;
+        }
+        .price {
+            font-size: 16px;
+            font-weight: bold;
+            color: #333;
+            margin-bottom: 10px;
+            display: block;
+        }
+        .product button {
+            padding: 10px 20px;
+            background-color: #ff6600;
+            border: none;
+            border-radius: 5px;
+            color: #fff;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+        .product button:hover {
+            background-color: #cc5500;
+        }
+        footer {
+            background-color: #333;
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <div class="top-bar">
+            <h1><I>ATHAZON-ALWAYS CHOOSE THE BEST ONE</I></h1>
+            <!-- Search Bar -->
+            <form class="search-form">
+                <input type="text" placeholder="Search...">
+                <button type="submit">Search</button>
+            </form>
+            <!-- User Account -->
+            <div class="user-account">
+                <a href="#">Sign In</a> / <a href="#">Register</a>
+            </div>
+        </div>
+        <!-- Navigation Bar -->
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Shop</a></li>
+                <li><a href="#">Categories</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Main Content Section -->
+    <main>
+        <!-- Featured Products -->
+        <section class="featured-products">
+            <h2>Featured Products</h2>
+            <div class="product-list">
+                <!-- Featured Product 1 -->
+                <div class="product">
+                    <img src="IPHONE 15.JPG">
+                    <h3>IPHONE 15</h3>
+                    <p>PAISA HI PAISA HOGA</p>
+                    <span class="price">$1</span>
+                    <button>Add to Cart</button>
+                </div>
+                <!-- Featured Product 2 -->
+                <div class="product">
+                    <img src="IPHONE 15 PRO MAX.JPG">
+                    <h3>IPHONE 15 PRO MAX</h3>
+                    <p>JALDI LELO BHAI OFFER HAI</p>
+                    <span class="price">$2</span>
+                    <button>Add to Cart</button>
+                </div>
+                <!-- Add more featured products here -->
+            </div>
+        </section>
+
+        <!-- Product Categories -->
+        <section class="product-categories">
+            <h2>Product Categories</h2>
+            <ul>
+                <li><a href="#">ELECTRONICS</a></li>
+                <li><a href="#">SPORTS</a></li>
+                <li><a href="#">KIDS</a></li>
+                <li><a href="#">GROCERY</a></li>
+                <!-- Add more categories here -->
+            </ul>
+        </section>
+    </main>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; 2024 ATHAZON. All rights reserved.</p>
+    </footer>
+</body>
+</html>
